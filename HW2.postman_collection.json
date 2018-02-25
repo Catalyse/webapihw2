@@ -1,0 +1,319 @@
+{
+	"info": {
+		"name": "HW2",
+		"_postman_id": "d3db6374-5b53-1a54-bc63-8be915d633ac",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://taylormayhw2.herokuapp.com/gets",
+					"protocol": "https",
+					"host": [
+						"taylormayhw2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"gets"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Invalid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://taylormayhw2.herokuapp.com/gets",
+					"protocol": "https",
+					"host": [
+						"taylormayhw2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"gets"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "test",
+							"value": "test1teste",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "test3",
+							"value": "tes2",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://taylormayhw2.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"taylormayhw2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post Invalid",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "test",
+							"value": "test1teste",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "test3",
+							"value": "tes2",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://taylormayhw2.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"taylormayhw2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://taylormayhw2.herokuapp.com/puts",
+					"protocol": "https",
+					"host": [
+						"taylormayhw2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"puts"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Put Invalid",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://taylormayhw2.herokuapp.com/puts",
+					"protocol": "https",
+					"host": [
+						"taylormayhw2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"puts"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "asdf",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "catalyse",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://taylormayhw2.herokuapp.com/deletes",
+					"protocol": "https",
+					"host": [
+						"taylormayhw2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"deletes"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Invalid",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "asdf",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "catalyse",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://taylormayhw2.herokuapp.com/deletes",
+					"protocol": "https",
+					"host": [
+						"taylormayhw2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"deletes"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete No Auth",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://taylormayhw2.herokuapp.com/deletes",
+					"protocol": "https",
+					"host": [
+						"taylormayhw2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"deletes"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Bad Auth",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "catalyse",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://taylormayhw2.herokuapp.com/deletes",
+					"protocol": "https",
+					"host": [
+						"taylormayhw2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"deletes"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
